@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R-Tech i ekipa</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-logo.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">R-TECH</h1>
+
+          <p class="title">Robotic Education</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+		
+		  <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="pulse-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">STATUS</p>
+
+              <a href="" class="contact-link">ACTIVE</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ronald@udrugaregoc.com" class="contact-link">ronald@udrugaregoc.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="person-add-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">ACCEPTING NEW MEMBERS</p>
+
+              <time datetime="1982-06-23">YES</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Zagreb, Croatia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-slack"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Tracker</button>
+          </li>
+<!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+-->
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+        <header>
+          <h2 class="h2 article-title">RoboSaur Discovery Session</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            U današnjem postu, pričamo o napretku našeg uzbudljivog projekta - RoboSaur. Naš cilj je stvoriti edukativni robotski kit koji će biti pristupačan svim srednjoškolcima u Hrvatskoj, koristeći lako dostupne komponente. Evo kako smo krenuli na ovo putovanje i što smo do sada postigli.
+
+Minimalni Zahtjevi i Odabir Mikroupravljača
+Kao prvi korak, definirali smo minimalne zahtjeve koje RoboSaur mora ispunjavati. Ključna odluka je bila izbor mikroupravljača koji će pokretati naš robot. Odlučili smo se za RP2040, mikroupravljač koji nudi savršeni balans između funkcionalnosti i dostupnosti. RP2040 podržava radni napon od 3.3V za ulaze/izlaze (I/O) i 1.1V za jezgre.</p>
+
+          <p>
+            Regulacija Napona
+Kako bismo koristili Li-Ion 3.7V bateriju od 380mAh, trebali smo riješiti problem regulacije napona. RP2040 nema ugrađeni regulator koji bi omogućio direktnu konverziju iz 3.7V na 3.3V. Stoga smo odabrali XC6222 seriju vanjskih regulatora niskog pada napona (low dropout regulator). Dva keramička kondenzatora od 1uF postavljena su paralelno uz uzemljenje (GND) kako bi osigurali stabilnost napona.
+
+Kontrola Motora
+Prilikom testiranja motora, uvidjeli smo da RP2040 sam po sebi ne može direktno upravljati motorima zbog ograničenja struje. Odlučili smo se za DRV8210DSGR kontroler motora, koji omogućuje kontrolu putem PWM signala. Svakom motoru je potreban jedan kondenzator i dva PWM izlaza za precizno upravljanje brzinom.
+          </p>
+		  
+		  <p>
+		  Napredak i Sljedeći Koraci
+Do sada smo definirali osnovne zahtjeve, odabrali ključne komponente i započeli proces dizajniranja tiskane pločice (PCB). Pribavili smo sve potrebne 3D modele i CAD modele komponenata te ažurirali BOM listu.
+
+Naš projekt napreduje prema planu i uzbuđeni smo što ćemo u narednim tjednima završiti dizajn i započeti s testiranjem prototipa.
+
+Ostanite s nama za daljnje novosti i detalje o napretku RoboSaura! Vaša podrška i komentari su uvijek dobrodošli.
+		  </p>
+        </section>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
