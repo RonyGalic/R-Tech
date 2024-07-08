@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R-Tech i ekipa</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-logo.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">R-TECH</h1>
+
+          <p class="title">Robotic Education</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+		
+		  <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="pulse-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">STATUS</p>
+
+              <a href="" class="contact-link">ACTIVE</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ronald@udrugaregoc.com" class="contact-link">ronald@udrugaregoc.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="person-add-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">ACCEPTING NEW MEMBERS</p>
+
+              <time datetime="1982-06-23">YES</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Zagreb, Croatia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-slack"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+		<a href="./index.html">
+           	 <button class="navbar-link">About</button>
+			<a/>
+          </li>
+
+          <li class="navbar-item">
+		<a href="./index.html">
+            	 <button class="navbar-link">Tracker</button>
+		</a>
+          </li>
+<!--
+          <li class="navbar-item">
+		<a href="./index.html">
+            	<button class="navbar-link">Portfolio</button>
+			</a>	
+          </li>
+-->
+          <li class="navbar-item">
+		  <a href="./index.html">
+            <button class="navbar-link active">Blog</button>
+			  </a>
+          </li>
+
+          <li class="navbar-item">
+		  <a href="./index.html">
+            <button class="navbar-link">Contact</button>
+		  </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+        <header>
+          <h2 class="h2 article-title">RoboSaur Workshop Session</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+			U današnjem postu, nastavljamo priču o napretku našeg uzbudljivog projekta - RoboSaur.
+          <p>
+          Proces Integracije i Dizajn Šasije
+			Krenuli smo s integracijom ključnih komponenti u naš prvi prototip. Dizajn donjeg dijela šasije, odnosno nosača za motore, trenutno je u fazi razvoja. Ovaj prototip će služiti za internu izobrazbu našeg razvojnog tima u području MicroPython-a i RP2040 mikroupravljača nove generacije. Odredili smo dimenzije u koje želimo smjestiti sve ključne komponente, uključujući motore i zupčanike.  
+		  </p>
+		  
+		  <p>
+			Dimenzioniranje Komponenata
+Gabriel i Ronald su odradili započeli proces definiranja dimenzija šasije i nosača za smještaj komponenti. Njihov rad omogućiti će uspješnu integraciju zupčanika i motora. Antonio je bio zadužen za razvoj gusjenica, koje su uspješno dizajnirane i mogu ući u proces testiranja. Ustanovljeno je da se gusjenice dimenzijski savršeno uklapaju u dizajnirane zupčanike, koje pokreće DC motor.
+		  </p>
+		  
+		  <p>
+		  Kontrola Motora
+Ronald i Gabriel su također započeli dizajn tranzistorske kontrole motora. Ovo je ključni dio projekta jer omogućuje preciznu kontrolu brzine i smjera kretanja motora te uspješnost ovog custom modula će omogućiti granularno programiranje svim korsinicima kit-a. Prva testna verzija ovog dizajna je već isprobana za start/stop kontrolu i očekujemo prve verzije prototipa kroz maksimalno dva tjedna.
+		  </p>
+		  
+		  <p>
+		  Priručnik za Učenje
+Osim tehničkih aspekata, započeli smo razgovore s Paolom o dizajniranju priručnika koji će služiti kao materijal za učenje svim učenicima koji će kupiti ili dobiti naš RoboSaur kit. Priručnik će pokrivati sve bitne teme, od osnovnog sastavljanja robota do programiranja i upravljanja pomoću MicroPython-a i RP2040 mikroupravljača.
+		  </p>
+		  
+		  <p>
+		  Zaključak
+Naš projekt napreduje prema planu i uzbuđeni smo što ćemo uskoro imati prvi funkcionalni prototip. Uz vašu podršku i komentare, sigurni smo da ćemo stvoriti nešto posebno i edukativno za sve buduće generacije mladih inženjera. Ostanite s nama za daljnje novosti i detalje o napretku RoboSaura! Vaša podrška i komentari su uvijek dobrodošli.
+
+Hvala što pratite naš napredak i radujemo se vašim povratnim informacijama.
+		  </p>
+        </section>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
