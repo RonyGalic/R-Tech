@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R-Tech i ekipa</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-logo.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">R-TECH</h1>
+
+          <p class="title">Robotic Education</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+		
+		  <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="pulse-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">STATUS</p>
+
+              <a href="" class="contact-link">ACTIVE</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ronald@udrugaregoc.com" class="contact-link">ronald@udrugaregoc.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="person-add-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">ACCEPTING NEW MEMBERS</p>
+
+              <time datetime="1982-06-23">YES</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Zagreb, Croatia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-slack"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+		<a href="./index.html">
+           	 <button class="navbar-link">About</button>
+			<a/>
+          </li>
+
+          <li class="navbar-item">
+		<a href="./index.html">
+            	 <button class="navbar-link">Tracker</button>
+		</a>
+          </li>
+<!--
+          <li class="navbar-item">
+		<a href="./index.html">
+            	<button class="navbar-link">Portfolio</button>
+			</a>	
+          </li>
+-->
+          <li class="navbar-item">
+		  <a href="./index.html">
+            <button class="navbar-link active">Blog</button>
+			  </a>
+          </li>
+
+          <li class="navbar-item">
+		  <a href="./index.html">
+            <button class="navbar-link">Contact</button>
+		  </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+        <header>
+          <h2 class="h2 article-title">RoboSaur update</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+			Since our last report, there have been a couple of changes. The first one is making the whole structure bigger, since some parts, like the battery, didn’t fit in the previous version. With that change, we got quite a lot of work: adjusting the motor holders, adjusting the motherboard size, etc.</p>
+		  <p>
+          Since the size increase, we had to adjust the motor holders to fit perfectly, and added two chanells for the wires to come through. Currently, Ronald is working on the electronics, on our own custom board. Antonio is working on tracks, while Vedran is working on the camera interface. Gabriel is working on the interior of the robot, battery placement, display holders, etc.
+		  </p>
+		  <p>
+			We also decided to use two processors instead of one: one which will drive all the motors, sensory, user processing and one that will send run fully fledge operating system.
+			</p>
+		  <h2>New!</h2>
+		  <p>
+		  We also started developing a new robot functionality, and it is almost completely done already. It will be the first of many, hopefully.
+		  </p>
+		</section>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
